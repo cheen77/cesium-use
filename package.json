@@ -1,7 +1,7 @@
 {
   "name": "cesium-use",
   "type": "module",
-  "version": "0.16.0",
+  "version": "0.16.1",
   "private": false,
   "packageManager": "pnpm@9.14.1",
   "description": "Vue powered CesiumJS utility library",
