@@ -18,7 +18,10 @@ import { useViewer } from '../useViewer'
  */
 export function useEntityCollection(entities = useViewer().entities) {
   const e = syncEntityCollection(entities)
-  tryOnScopeDispose(() => e.removeAll())
+  tryOnScopeDispose(() => {
+    e.removeAll()
+    e.suspendEvents()
+  })
 
   return e
 }
